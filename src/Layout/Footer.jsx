@@ -5,10 +5,8 @@ const Footer = () => {
   return (
     <div>
       <div className="footer">
+              
         
-            <img src={cclogo} alt="img" />
-        
-        <img src={mallogo} alt="img" />
        
 
       </div>

@@ -1,14 +1,19 @@
 import React from "react";
 import cclogo from "../assets/cc.png";
-import mallogo from "../assets/malhar.png";
+
+import bpit from "../assets/bpit_logo.png";
 const Header = () => {
   return (
     <div className="header">
-      <img src={cclogo} alt="img" />
-
-      <div>BPIT LOGO</div>
-
-      <img src={mallogo} alt="img" />
+     <div className="bpit-logo">
+        <img src = {bpit} alt="BPIT LOGO "/>
+      </div>
+      <div className="cc-logo">
+        <img src={cclogo} alt="CC LOGO" />
+      </div> 
+      
+    
+      
       
     </div>
   );

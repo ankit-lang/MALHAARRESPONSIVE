@@ -3,19 +3,22 @@
   padding: 0;
   margin: 0;
 }
+
 body {
-  width: 100vw;
-  /* background: rgb(143, 82, 160); */
+  background-size: 100%;
+  height: 100vmax;
+  /* background: rgba(0, 151, 19, 0.2); */
   background-image: url(./assets/bg.jpg);
-  color: white;
+
+  object-fit: contain;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(10px);
 }
 
 .header {
   width: 100%;
-  height: 20vh;
-  display: flex;
 
-  justify-content: space-around;
+  display: flex;
 
   align-items: center;
 }
@@ -30,23 +33,152 @@ body {
 }
 
 .main {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 5rem;
+  text-align: center;
+  margin: 0 0 280px 0;
+}
+.logo img {
+  width: 70%;
+  cursor: pointer;
+}
+.insta img {
+  margin: 2px;
+  width: 18%;
+  cursor: pointer;
+}
+.twitter img {
+  margin: 2px;
+
+  width: 18%;
+  cursor: pointer;
+}
+.info {
+  width: 60%;
+  text-align: center;
+  /* margin: 0 120px 0 0; */
+}
+.data {
+  font-family: "Courier New", Courier, monospace;
+  color: azure;
+  font-weight: bold;
+}
+.links {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: wrap; */
+
+  font-family: "Courier New", Courier, monospace;
+  color: azure;
+  font-size: 20px;
+  margin-top: 40px;
+  /* margin: 10px 0 0 -138px; */
+  width: 90%;
+  justify-content: center;
+}
+.insta {
+  width: 20%;
+  /* text-align: left; */
+  /* margin: 10px 130px -1px -97px; */
+}
+.twitter {
+  width: 20%;
+  text-align: left;
+  /* margin: 10px 41px 3px -495px; */
 }
 
-.header img {
-  width: 5%;
+/* .header img{
+  width: 35%;
+} */
+.header-malhaar-logo {
+  margin: 2px 0 0 0;
 }
-.footer img {
-  margin: 20px;
-  width: 5%;
+.header p data {
+  font-size: 135px;
+  margin: 0 0 0 -240px;
+}
+/* .malhaar-heading{
+  width: 60%;
+  text-align: center;
+  
+} */
+.footer {
+  display: flex;
+  margin: 0 0 -70px 0;
+}
+.cclogof {
+  width: 10%;
+}
+.updates {
+  width: 80%;
+}
+.malhaarlogof {
+  width: 10%;
+}
+.cclogof img {
+  width: 55%;
+}
+.updates {
+  text-align: center;
+  margin: 0 0 0 0;
+}
+.malhaarlogof img {
+  width: 55%;
 }
 .compage {
   display: flex;
   align-items: center;
+}
+/* .malhaar-logo img{
+  width: 35%;
+  margin : 0 0 0 -50px;
+   */
+
+.bpit-logo img {
+  width: 25%;
+}
+/* .malhaar-logo{
+  width: 30%;
+  text-align: left;
+  
+  
+} */
+.bpit-logo {
+  width: 50%;
+}
+.cc-logo {
+  width: 50%;
+  text-align: right;
+}
+.cc-logo img {
+  width: 20%;
+  /* background: rgba(16, 17, 17, 0.2); */
 }
 .mallogo img {
   background: rgb(38, 25, 95);
   border-radius: 50%;
   margin-left: 15vw;
   width: 30%;
+}
+
+.p-logo {
+  width: 10%;
+}
+
+@media only screen and (max-width: 700px) {
+  .links {
+    /* flex-direction: column; */
+    /* background: green; */
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  body {
+    background-size: 150vh;
+  }
 }
